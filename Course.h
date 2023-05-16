@@ -14,13 +14,17 @@ public:
     Course();
     Course(string&, float&);
     string getCourseName();
-    float getGrade();
-    void setCourseName(string);
+    string getLetterGrade();
+    float getGrade() const;
+    void setCourseName(string&);
     void setGrade(float);
+    void calculateLetterGrade();
 
 private:
     string courseName;
+    string letterGrade;
     float grade;
+    float points = 0;
 };
 
 
