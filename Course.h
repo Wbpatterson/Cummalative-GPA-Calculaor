@@ -16,6 +16,7 @@ public:
     string getCourseName();
     string getLetterGrade();
     float getGrade() const;
+    float getPoints() const;
     void setCourseName(string&);
     void setGrade(float);
     void calculateLetterGrade();

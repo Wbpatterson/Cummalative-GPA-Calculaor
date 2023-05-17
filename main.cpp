@@ -1,13 +1,34 @@
 #include <iostream>
 #include "GpaCalculator.h"
 
-
 int main() {
-    GpaCalculator tmp{2};
-    tmp.addCourse("Math", 85.568);
-    tmp.addCourse("English", 76.789);
+
+    int option;
+
+    std::cout << "Enter the total amount of courses: ";
+    std::cin >> option;
+    std::cin.ignore();
+
+    GpaCalculator tmp{option};
+
+    for(int i = 0; i < option; i++){
+        string courseName;
+        float grade;
+
+        std::cout << "Enter Course Name: ";
+        std::getline(std::cin, courseName);
+
+        std::cout << "Enter Course Grade: ";
+        std::cin >> grade;
+
+        std::cin.ignore();
+
+        tmp.addCourse(courseName, grade);
+    }
 
     tmp.printCourses();
+    tmp.calculateGPA();
+    std::cout << "Cumulative Semester GPA: " << tmp.getGPA();
 
     return 0;
 }

@@ -4,7 +4,6 @@
 
 #include "Course.h"
 
-#include <utility>
 
 Course::Course(): courseName("unknown"), grade(0.0), letterGrade("unknown"), points(0.0) {}
 
@@ -19,6 +18,8 @@ string Course::getCourseName() { return courseName; }
 string Course::getLetterGrade() { return letterGrade; }
 
 float Course::getGrade() const { return grade; }
+
+float Course::getPoints() const { return points;}
 
 void Course::setCourseName(string &name) { courseName = name; }
 
