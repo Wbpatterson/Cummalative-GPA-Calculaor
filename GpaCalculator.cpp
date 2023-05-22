@@ -1,4 +1,5 @@
 //
+
 // Created by BJ on 5/16/2023.
 //
 
@@ -42,5 +43,7 @@ void GpaCalculator::calculateGPA() {
     }
 
     gpa = sum / static_cast<float>(courses.size());
+
+    if(gpa < 1) gpa = 0;
 
 }

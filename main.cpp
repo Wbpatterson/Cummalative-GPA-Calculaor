@@ -28,7 +28,7 @@ int main() {
 
     tmp.printCourses();
     tmp.calculateGPA();
-    std::cout << "Cumulative Semester GPA: " << tmp.getGPA();
+    std::cout << "Cumulative Semester GPA: " << std::setprecision(3) << tmp.getGPA();
 
     return 0;
 }

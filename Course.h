@@ -9,6 +9,8 @@
 #include <string>
 using std::string;
 
+
+// need to specify credit hours and apply to gpa
 class Course {
 public:
     Course();

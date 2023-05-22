@@ -43,13 +43,13 @@ void Course::calculateLetterGrade() {
 
     else if(grade >= 73) letterGrade = "C", points = 2.0;
 
-    else if(grade >= 70) letterGrade = "C+", points = 1.7;
+    else if(grade >= 70) letterGrade = "C-", points = 1.7;
 
-    else if(grade >= 67) letterGrade = "C+", points = 1.3;
+    else if(grade >= 67) letterGrade = "D+", points = 1.3;
 
-    else if(grade >= 65) letterGrade = "C+", points = 1.0;
+    else if(grade >= 65) letterGrade = "D", points = 1.0;
 
-    else if(grade < 65) letterGrade = "F", points = 0.5;
+    else if(grade < 65) letterGrade = "F", points = 0.0;
 }
 
 
